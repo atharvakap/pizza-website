@@ -1,0 +1,129 @@
+/* Small tablest t 1200px */
+@media only screen and (max-width: 1200px) {
+    .heroTextBox {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row {padding: 0 2%;}
+
+}
+
+/* Small tablets to bog tablets: 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {font-size: 18px;}
+    
+    section {padding: 60px 0;}
+    
+    .longCopy {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .stepsBox {margin-top: 10px;}
+    .stepsBox:last-child {margin-top: 10px;}
+    .workSteps {margin-bottom: 40px;}
+    .workSteps:last-of-type {margin-bottom: 60px;}
+    .stepsBox:first-child {margin-top: 10px;}
+    .workSteps div {padding: 7px;}
+    
+    .appScreen {width: 50%;}
+    
+    .iconSmall {
+        width: 17px;
+        margin-right: 5px;
+    }
+    .cityFeature {font-size: 90%;}
+    
+    .planBox {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .planPrice {font-size: 250%;}
+    .contactForm {width: 96%;}
+    
+    .footerNav li {margin-right: 14px;}
+}
+
+/* Small phones to small tablets: 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body {font-size: 16px;}
+    section {padding: 30px 0;}
+    
+    .row,
+    .heroTextBox {
+        padding: 0 4%;
+    }
+    
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+    h1 {font-size: 180%;}
+    h2 {font-size: 150%;}
+    
+    .mainNav {display: none;}
+    .mobileNavIcon {display: inline-block;}
+    
+    .mainNav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    
+    .mainNav li {
+        display: block;
+    }
+    
+    .mainNav li a:link,
+    .mainNav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .mainNav {margin-top: 10px;}
+
+    .sticky .mainNav li a:link,
+    .sticky .mainNav li a:visited {padding: 11px 0;}
+    .sticky .mobileNavIcon i {color: #555;}
+    .sticky .mobileNavIcon {margin-top: 10px;}
+    
+    .longCopy {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .workSteps div {
+        height: 43px;
+        width: 43px;
+        font-size: 140%;
+    }
+    
+    .stepsBox:first-child {text-align: center;}
+    .appScreen {width: 30%;}
+    
+    
+}
+
+/* Small phones: 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section {padding: 25px 0;}
+    .contactForm {width: 100%;}
+    
+    .element {
+        margin-bottom: 2px;
+    }
+    
+     .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    
+}
