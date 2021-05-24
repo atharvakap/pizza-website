@@ -6,14 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
+         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">            
+        <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">        
+        <link rel="stylesheet" type="text/css" href="resources/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="shortcut icon" type="image/jpg" href="resources/img/logo.jpg">
         <title>Tile of our project</title>
     </head>
     <body>
-        Hi Guys!!
+        <header class="header">
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo.jpg" alt="Logo" class="row__logo">
+                    <ul class="row__mainNav">
+                        <li><a href="#">Make order</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#" class="row__btn">Sign in</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__textbox">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Tag line</span>
+                    <span class="heading-primary--sub">of company</span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">Order now</a>
+            </div>
+        </header>
     </body>
 </html>
