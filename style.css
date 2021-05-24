@@ -1,3 +1,4 @@
+/*-----------------------------------Basic Reset----------------------------------------------*/
 *,
 *::after,
 *::before {
@@ -5,17 +6,211 @@
     padding: 0;
     box-sizing: inherit;
 } 
-/* Basic reset */
 
 html {
-    font-size: 62.5%;
+    font-size: 75.5%;
 }
 
 body {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.6rem;
-    line-height: 1.7;
     box-sizing: border-box;
 }
 
+/*-------------------------------------Section 1------------------------------------------------*/
+.header {
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../resources/img/mette-van-der-linden-A_Fvhie9MZY-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    position: relative;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.row__logo {
+    height: 10rem;
+    width: auto;
+    float: left;
+    margin-top: 2rem;
+}
+
+.row__mainNav {
+    float: right;
+    list-style: none;
+    margin-top: 5.4rem;
+}
+
+.row__mainNav li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+.row__mainNav li a:link,
+.row__mainNav li a:visited {
+    padding: 0.8rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 0.2rem solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.row__mainNav li a:hover,
+.row__mainNav li a:visited {
+    border-bottom: 0.2rem solid #e67e22;
+}
+
+.row__btn:link,
+.row__btn:visited {
+    padding: 1rem 1.5rem !important;
+    border-radius: 1.5rem !important;
+    text-decoration: none !important;
+    font-size: 90% !important;
+    text-transform: uppercase !important;
+    border: 0.2rem solid #e67e22 !important;
+    transition: color 0.2s, background-color 0.2s !important;
+}
+
+.row__btn:hover,
+.row__btn:visited {
+    background-color: #e67e22 !important;
+}
+
+.header__textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translate(-0.1rem);
+}
+
+.btn--white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn--white::after {
+    background-color: #fff;;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn--animated {
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+}
+
+/*-------------------------------------Animations------------------------------------------*/
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-10rem);
+    }
+    80% {
+        transform: translate(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(10rem);
+    }
+    80% {
+        transform: translate(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
