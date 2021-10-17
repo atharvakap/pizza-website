@@ -37,7 +37,7 @@
                         <li><a href="#" class="js--scrollToNewest">Newest</a></li>
                         <li><a href="#" class="js--scrollToMeals">Meals</a></li>
                         <li><a href="#" class="js--scrollToAboutUs">About us</a></li>
-                        <li><a href="Log in.php" class="row__btn" target="_blank">Sign in</a></li>
+                        <li><a href="Log in.html" class="row__btn" target="_blank">Sign in</a></li>
                     </ul>
                 </div>
             </nav>
@@ -672,10 +672,10 @@
             <div class="row">
                 <div class="subscribe">
                     <div class="subscribe__form">
-                        <form action="userdatabase.php" method="post" class="form">
+                        <form method="post" class="form">
                             <h3>Subscribe to Leckerpizza</h3>
 
-                            <?php
+<!--                             <?php
                                 error_reporting(0);
                                 if ($_GET['success'] == 1) {
                                     echo"<div class=\"phpmsg\"><b>Thank you for subscribing to Leckerpizza!</b></div>";
@@ -684,7 +684,7 @@
                                 if ($_GET['success'] == -1) {
                                     echo"<div class=\"phpmsg phpclr\"><b>Oops! Email already exists</b></div>";
                                 }
-                            ?>
+                            ?> -->
 
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Full name" id="name" name="username" required>
